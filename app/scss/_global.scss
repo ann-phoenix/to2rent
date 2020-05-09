@@ -36,23 +36,22 @@ h6 {
 
 a {
   text-decoration: none;
+  display: inline-block;
+	color: $grey;
 }
 
 ul,
 li{
-	margin: 0;
-	padding: 0;
 	list-style: none;
+}
+button{
+  cursor: pointer;
 }
 button:focus,
 input:focus {
   outline: transparent;
 }
-a{
-	display: inline-block;
-	text-decoration: none;
-	color: $grey;
-}
+
 .container{
   max-width: 1230px;
   padding: 0 15px;
