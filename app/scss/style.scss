@@ -74,7 +74,8 @@
 	margin-right: 69px;
 }
 .search__form-input,
-.contact__form-input{
+.contact__form-input,
+.contact__input{
  height: 70px;
  width: 430px;
  padding: 0 15px;
@@ -83,7 +84,8 @@
 }
 .search__form-input::placeholder,
 .contact__form-input::placeholder,
-.contact__form-textarea::placeholder{
+.contact__form-textarea::placeholder,
+.contact__input::placeholder{
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -317,6 +319,46 @@ color: #fff;
 	font-size: 18px;
 }
 //end reason
+//start modal
+#modal-1,
+#modal-2{
+	background-color: $light-grey;
+	color: #000;
+	max-width: 730px;
+	width: 100%;
+}
+.contact__title {
+	text-align: center;
+	margin-bottom: 40px;
+	@include f700;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.contact__form {	
+	margin: 0 auto;
+	max-width: 400px;
+}
+.contact__input {
+	margin-bottom: 20px;
+	border: none;
+	background-color: #fff;
+	display: block;
+	width: 100%;
+}
+.contact__button{
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.fancybox-button svg{
+ border: 2px solid #000;
+ transition: transform 400ms .8s;
+}
+.fancybox-button svg:hover{
+	transform: rotate(360deg) scale(1.2);
+}
+//end modal
 //start footer
 .footer__top{
 	padding: 100px 0;	

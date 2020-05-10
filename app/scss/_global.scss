@@ -58,11 +58,11 @@ li{
 button{
   cursor: pointer;
 }
-button:focus,
-input:focus,
-textarea:focus {
-  outline: transparent;
-}
+// button:focus,
+// input:focus,
+// textarea:focus {
+//   outline: transparent;
+// }
 
 .container{
   max-width: 1230px;

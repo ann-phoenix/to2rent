@@ -141,7 +141,7 @@
 										<li class="our-managers__name">Максим</li>
 										<li class="our-managers__location">Москва</li>
 									</ul>
-									<button class="our-managers__btn">Связаться</button>
+									<a class="our-managers__btn" data-fancybox data-src="#modal-1" href="javascript:;">Связаться</a>
 
 								</div>
 								<div class="our-manager__item">
@@ -150,8 +150,7 @@
 										<li class="our-managers__name">Анна</li>
 										<li class="our-managers__location">Киев</li>
 									</ul>
-									<button class="our-managers__btn">Связаться</button>
-								</div>
+									<a class="our-managers__btn" data-fancybox data-src="#modal-2" href="javascript:;">Связаться</a>								</div>
 							</div>
 						</div>
 
@@ -265,7 +264,33 @@
 				</a>
 			</div>
 		</footer>
+	</div>
 
+	<div id="modal-1">
+		<div class="contact__wrapper">
+			<div class="contact__title">
+				Связаться с Максимом
+			</div>
+			<form class="contact__form">
+				<input class="contact__input" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Ваше имя*" required>
+				<input class="contact__input" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Контактный номер*" required>
+				<input class="contact__input" type="email" placeholder="E-mail">
+				<button class="contact__button button" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<div id="modal-2">
+		<div class="contact__wrapper">
+			<div class="contact__title">
+				Связаться с Анной
+			</div>
+			<form class="contact__form">
+				<input class="contact__input" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Ваше имя*" required>
+				<input class="contact__input" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Контактный номер*" required>
+				<input class="contact__input" type="email" placeholder="E-mail">
+				<button class="contact__button button" type="submit">Отправить</button>
+			</form>
+		</div>
 	</div>
 
 	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
