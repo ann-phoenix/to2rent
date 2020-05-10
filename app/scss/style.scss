@@ -73,14 +73,17 @@
 	width: 155px;
 	margin-right: 69px;
 }
-.search__form-input{
+.search__form-input,
+.contact__form-input{
  height: 70px;
  width: 430px;
  padding: 0 15px;
  border: 2px solid $light-grey;
  font-size: 18px;
 }
-.search__form-input::placeholder{
+.search__form-input::placeholder,
+.contact__form-input::placeholder,
+.contact__form-textarea::placeholder{
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -349,11 +352,12 @@ color: #fff;
 	width: 511px;
 	border: none;
 }
-.footer__form-btn {
+.button{
 	color: #fff;
-	background-color: $grey;
+	background-color: #888;
 	border: none;
-	padding: 25px 35px;
+	padding: 0 35px;
+	height: 70px;
 }
 .footer__logo{
 	text-align: center;
@@ -393,15 +397,13 @@ color: #fff;
 	background-color: #000;
 	color: #fff;
 }
-
 .contact__head {
 	background-color: #fff;
   color: #000;
 	padding: 18px 15px;
 	text-align: center;
-	margin-bottom: 10px;
-}
-.contact__inner {
+	margin-bottom: 50px;
+	border-top: 2px solid $light-grey;
 }
 .contact__map {
 	margin-bottom: 50px;
@@ -414,8 +416,8 @@ color: #fff;
 	display: flex;
 }
 .contact__info {
-	margin-right: 30px;
-	max-width: 330px;
+	margin-right: 20px;
+	max-width: 300px;
 	width: 100%;
 }
 .contact__info-item {
@@ -424,6 +426,7 @@ color: #fff;
 .contact__info-title {
 	padding-bottom: 20px;
 	position: relative;
+	margin-bottom: 20px;
 	 &::after{
 		content: '';
 		position: absolute;
@@ -434,16 +437,37 @@ color: #fff;
 		bottom: 0;
 	}
 }
-
-
 .contact__info-content {
+	max-width: 230px;
+	color: #fff;
+	font-size: 18px;
 }
-
-.contact__form {
+.contact__form{
+	width: 100%;
+	margin-bottom: 50px;
 }
-.contact__form-title {
+.contact__form-title{
+ margin-bottom: 20px;
+}
+.contact__form-input{
+	border: none;
+	margin-bottom: 20px;
+	display: block;
+}
+.contact__form-textarea{
+ font-size: 18px;
+ line-height: 24px;
+ padding: 15px 15px;
+ height: 190px;
+ display: block;
+ width: 100%;
+ resize: none;
+ border: none;
+ margin-bottom: 20px;
 }
 .contact__form-row {
+	display: flex;
+	justify-content: space-between;
 }
 //end contacts
 
