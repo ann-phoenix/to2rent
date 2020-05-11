@@ -122,7 +122,7 @@
 					<h3 class="best__title">
 						Коттедж Modern Лос Анджелес
 					</h3>
-					<a class="best__link" href="#">
+					<a class="best__link" data-fancybox data-src="#modal-3" href="javascript:;">
 						Забронировать
 					</a>
 				</div>
@@ -150,7 +150,8 @@
 										<li class="our-managers__name">Анна</li>
 										<li class="our-managers__location">Киев</li>
 									</ul>
-									<a class="our-managers__btn" data-fancybox data-src="#modal-2" href="javascript:;">Связаться</a>								</div>
+									<a class="our-managers__btn" data-fancybox data-src="#modal-2" href="javascript:;">Связаться</a>
+								</div>
 							</div>
 						</div>
 
@@ -272,10 +273,12 @@
 				Связаться с Максимом
 			</div>
 			<form class="contact__form">
-				<input class="contact__input" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Ваше имя*" required>
-				<input class="contact__input" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Контактный номер*" required>
-				<input class="contact__input" type="email" placeholder="E-mail">
-				<button class="contact__button button" type="submit">Отправить</button>
+				<input class="contact__form-input" type="text" pattern="^[А-Яа-яЁё\s]+$"
+					title="Разрешено использовать только пробелы и русские буквы" placeholder="Ваше имя*" required>
+				<input class="contact__form-input" type="tel" pattern="(\+?\d[- .]*){7,13}" title="+7 (777) 777-77-77"
+					placeholder="Контактный номер*" required>
+				<input class="contact__form-input" type="email" title="mail@example.com" placeholder="E-mail">
+				<button class="contact__form-button button" type="submit">Отправить</button>
 			</form>
 		</div>
 	</div>
@@ -285,13 +288,51 @@
 				Связаться с Анной
 			</div>
 			<form class="contact__form">
-				<input class="contact__input" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="Ваше имя*" required>
-				<input class="contact__input" type="tel" pattern="(\+?\d[- .]*){7,13}" placeholder="Контактный номер*" required>
-				<input class="contact__input" type="email" placeholder="E-mail">
-				<button class="contact__button button" type="submit">Отправить</button>
+				<input class="contact__form-input" type="text" pattern="^[А-Яа-яЁё\s]+$"
+					title="Разрешено использовать только пробелы и русские буквы" placeholder="Ваше имя*" required>
+				<input class="contact__form-input" type="tel" pattern="(\+?\d[- .]*){7,13}" title="+7 (777) 777-77-77"
+					placeholder="Контактный номер*" required>
+				<input class="contact__form-input" type="email" title="mail@example.com" placeholder="E-mail">
+				<button class="contact__form-button button" type="submit">Отправить</button>
 			</form>
 		</div>
 	</div>
+
+	<div id="modal-3">
+		<div class="booking__wrapper">
+			<div class="booking__title">
+				Бронирование
+			</div>
+			<form class="booking__form">
+				<label class="booking__form-label">
+					Имя*
+					<input class="booking__form-input" type="text" pattern="^[А-Яа-яЁё\s]+$"
+						title="Разрешено использовать только пробелы и русские буквы" required>
+				</label>
+				<label class="booking__form-label">
+					Контактный номер*
+					<input class="booking__form-input" type="tel" pattern="(\+?\d[- .]*){7,13}" title="+7 (777) 777-77-77"
+						required>
+				</label>
+				<label class="booking__form-label">
+					E-mail
+					<input class="booking__form-input" type="email" title="mail@example.com">
+				</label>
+				<label class="booking__form-label calendar" for="arrive">Дата прибытия*
+					<input class="booking__form-input" type="date" name="arrive" required>
+				</label>
+				<label class="booking__form-label calendar" for="departure">Дата выезда*
+					<input class="booking__form-input" type="date" name="departure" required>
+				</label>
+				<label class="booking__form-label">
+					Комментарий
+					<textarea class="booking__form-textarea"></textarea>
+				</label>
+				<button class="booking__form-button button" type="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+
 
 	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>

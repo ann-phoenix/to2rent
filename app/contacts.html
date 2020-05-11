@@ -80,8 +80,9 @@
 								<div class="contact__form-title">Задайте свой вопрос</div>
 								<form>
 									<div class="contact__form-row">
-										<input class="contact__form-input" type="text" placeholder="Имя*" required>
-										<input class="contact__form-input" type="text" placeholder="E-mail*" required>
+										<input class="contact__form-input" type="text" pattern="^[А-Яа-яЁё\s]+$" 	title="Разрешено использовать только пробелы и русские буквы"
+										 placeholder="Имя*" required>
+										<input class="contact__form-input" type="email" title="mail@example.com" placeholder="E-mail*" required>
 									</div>
 									<textarea class="contact__form-textarea" placeholder="Сообщение*" required></textarea>
 									<button class="contact__form-btn button" type="submit">Отправить</button>
@@ -91,7 +92,6 @@
 					</div>
 				</div>
 			</section>
-
 		</div>
 		<footer class="footer">
 			<div class="logo footer__logo">
