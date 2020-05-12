@@ -19,18 +19,7 @@ body{
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: $grey;
-}
-.wrapper{
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-.content{
- flex: 1 0 auto;
-}
-.footer{
-  flex: 0 0 auto;
+  color: #fff;
 }
 ul,
 ol,
@@ -63,17 +52,23 @@ button{
 // textarea:focus {
 //   outline: transparent;
 // }
-
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
 .container{
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
-.container-fluid{
-	max-width: 100%;
-  margin: 0 auto;
-  padding: 0 0; 
-}
+
 #modal-1,
 #modal-2,
 #modal-3{
